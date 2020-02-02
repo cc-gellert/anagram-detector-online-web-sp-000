@@ -2,11 +2,15 @@
 class Anagram 
   attr_accessor :word 
   def initialize(word)
-    @word = word 
+    @word = word  
   end 
   def match(arr)
     results = []
     arr.each do |i|
-      
+      if(i.sort == @word.sort)
+        results << i 
+      end 
+    end 
+    results   
   end 
 end 
