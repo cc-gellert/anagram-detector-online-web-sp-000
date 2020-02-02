@@ -2,7 +2,7 @@
 class Anagram 
   attr_accessor :word 
   def initialize(word)
-    @word = word.split  
+    @word = word.scan()  
   end 
   def match(arr)
     results = []
