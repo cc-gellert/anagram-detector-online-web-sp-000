@@ -7,7 +7,8 @@ class Anagram
   def match(arr)
     results = []
     arr.each do |i|
-      if(i.sort == @word.sort)
+      comparison = i.scan(/\w/)
+      if(comparison.sort == @word.sort)
         results << i 
       end 
     end 
